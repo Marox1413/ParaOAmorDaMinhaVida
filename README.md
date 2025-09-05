@@ -7,13 +7,44 @@
 <meta http-equiv="Cache-Control" content="max-age=31536000">
 </head>
 
-<script>document.addEventListener("DOMContentLoaded",function(){const c=document.createElement("canvas");c.id="c";Object.assign(c.style,{position:"fixed",top:0,left:0,pointerEvents:"none",zIndex:9999});document.body.appendChild(c);const x=c.getContext("2d");c.width=innerWidth;c.height=innerHeight;const h=[];class H{constructor(){this.r()}r(){this.x=Math.random()*c.width;this.y=c.height+50;this.s=10+Math.random()*15;this.v=2+Math.random()*3;this.o=0.5+Math.random()*0.5}u(){this.y-=this.v;if(this.y<-100)this.r()}d(){x.save();x.translate(this.x,this.y);x.scale(this.s/100,this.s/100);x.rotate(Math.PI/4);x.globalAlpha=this.o;x.fillStyle="red";x.beginPath();x.moveTo(0,0);x.bezierCurveTo(0,-30,-50,-30,-50,0);x.bezierCurveTo(-50,30,0,50,0,70);x.bezierCurveTo(0,50,50,30,50,0);x.bezierCurveTo(50,-30,0,-30,0,0);x.fill();x.restore()}}for(let i=0;i<100;i++)h.push(new H());(function a(){x.clearRect(0,0,c.width,c.height);for(const e of h)e.u(),e.d();requestAnimationFrame(a)})();addEventListener("resize",()=>{c.width=innerWidth;c.height=innerHeight})});</script>
+<script>document.addEventListener("DOMContentLoaded",function(){const c=document.createElement("canvas");c.id="c";Object.assign(c.style,{position:"fixed",top:0,left:0,pointerEvents:"none",zIndex:9999});document.body.appendChild(c);const x=c.getContext("2d");c.width=innerWidth;c.height=innerHeight;const h=[];class H{constructor(){this.r()}r(){this.x=Math.random()*c.width;this.y=c.height+50;this.s=10+Math.random()*15;this.v=2+Math.random()*3;this.o=0.5+Math.random()*0.5}u(){this.y-=this.v;if(this.y<-100)this.r()}d(){x.save();x.translate(this.x,this.y);x.scale(this.s/100,this.s/100);x.rotate(Math.PI/4);x.globalAlpha=this.o;x.fillStyle="red";x.beginPath();x.moveTo(0,0);x.bezierCurveTo(0,-30,-50,-30,-50,0);x.bezierCurveTo(-50,30,0,50,0,70);x.bezierCurveTo(0,50,50,30,50,0);x.bezierCurveTo(50,-30,0,-30,0,0);x.fill();x.restore()}}for(let i=0;i<100;i++)h.push(new H());(function a(){x.clearRect(0,0,c.width,c.height);for(const e of h)e.u(),e.d();requestAnimationFrame(a)})();addEventListener("resize",()=>{c.width=innerWidth;c.height=innerHeight})});
+
+         // Código para o contador de tempo
+        const timeTogetherElement = document.getElementById('time-together');
+        const startDate = new Date('2024-07-02');
+
+        function updateTime() {
+            const now = new Date();
+            const difference = now - startDate;
+
+            if (difference < 0) {
+                timeTogetherElement.innerHTML = "Ainda não começamos!";
+                return;
+            }
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            timeTogetherElement.innerHTML = `Estamos juntos há: ${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos`;
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+
+</script>
 
 <style>
   body {
    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnnQfhLGq4zx8VxV4Y5uOyUjDEOJeB1gslU6IZ9sidKppn9FZ8OS6-YBo&s=10');a}</style>
 
 <h2 style = "color: white;font-size:1.3em; font-family: Menlo, monospace; text-shadow: 1px 1px 2px black;"><b>para o amor da minha vida^^</b> </h2>
+
+<p id="time-together" style="color: white; font-size:1.5em; font-family: Menlo, monospace; text-shadow: 1px 1px 2px black; font-weight: bold; margin-top: 15px;">
+    Carregando o tempo...
+</p>
+
 
 <p style = "color: white; font-size:1.3em; font-family: Menlo, monospace; text-shadow: 1px 1px 2px black;">Informe a data do inicio do nosso namoro^^
 

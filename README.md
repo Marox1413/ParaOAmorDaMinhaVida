@@ -1,4 +1,3 @@
-<html>
 <head>
  <title>Feliz nosso dia meu amor^^</title>
   
@@ -7,12 +6,48 @@
 
 <meta http-equiv="Cache-Control" content="max-age=31536000">
 </head>
-<body>
+
 <script>
 document.addEventListener("DOMContentLoaded",function(){
     // SEU CÓDIGO DA CHUVA DE CORAÇÕES COMEÇA AQUI
     const c=document.createElement("canvas");c.id="c";Object.assign(c.style,{position:"fixed",top:0,left:0,pointerEvents:"none",zIndex:9999});document.body.appendChild(c);const x=c.getContext("2d");c.width=innerWidth;c.height=innerHeight;const h=[];class H{constructor(){this.r()}r(){this.x=Math.random()*c.width;this.y=c.height+50;this.s=10+Math.random()*15;this.v=2+Math.random()*3;this.o=0.5+Math.random()*0.5}u(){this.y-=this.v;if(this.y<-100)this.r()}d(){x.save();x.translate(this.x,this.y);x.scale(this.s/100,this.s/100);x.rotate(Math.PI/4);x.globalAlpha=this.o;x.fillStyle="red";x.beginPath();x.moveTo(0,0);x.bezierCurveTo(0,-30,-50,-30,-50,0);x.bezierCurveTo(-50,30,0,50,0,70);x.bezierCurveTo(0,50,50,30,50,0);x.bezierCurveTo(50,-30,0,-30,0,0);x.fill();x.restore()}}for(let i=0;i<100;i++)h.push(new H());(function a(){x.clearRect(0,0,c.width,c.height);for(const e of h)e.u(),e.d();requestAnimationFrame(a)})();addEventListener("resize",()=>{c.width=innerWidth;c.height=innerHeight})
-    // SEU CÓDIGO DA CHUVA DE CORAÇÕES TERMINA AQUI</script>
+    // SEU CÓDIGO DA CHUVA DE CORAÇÕES TERMINA AQUI
+                              // Código para o contador de tempo
+    const counterContainer = document.getElementById('counter-container');
+    const startDate = new Date('2024-07-02');
+    
+    // Cria um novo elemento de parágrafo para o contador
+    const timeTogetherElement = document.createElement('p');
+    timeTogetherElement.style.color = 'white';
+    timeTogetherElement.style.fontSize = '1.5em';
+    timeTogetherElement.style.fontFamily = 'Menlo, monospace';
+    timeTogetherElement.style.textShadow = '1px 1px 2px black';
+    timeTogetherElement.style.fontWeight = 'bold';
+    timeTogetherElement.style.marginTop = '15px';
+    
+    // Adiciona o elemento à sua página
+    counterContainer.appendChild(timeTogetherElement);
+
+    function updateTime() {
+        const now = new Date();
+        const difference = now - startDate;
+
+        if (difference < 0) {
+            timeTogetherElement.innerHTML = "Ainda não começamos!";
+            return;
+        }
+
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+        timeTogetherElement.innerHTML = `Estamos juntos há: ${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos`;
+    }
+
+    setInterval(updateTime, 1000);
+    updateTime();
+</script>
 
 <style>
   body {
@@ -20,10 +55,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
 <h2 style = "color: white;font-size:1.3em; font-family: Menlo, monospace; text-shadow: 1px 1px 2px black;"><b>para o amor da minha vida^^</b> </h2>
 
-<p id="time-together" style="color: white; font-size:1.5em; font-family: Menlo, monospace; text-shadow: 1px 1px 2px black; font-weight: bold; margin-top: 15px;">
-    Carregando o tempo...
-</p>
-
+<div id="counter-container"></div>
 
 <p style = "color: white; font-size:1.3em; font-family: Menlo, monospace; text-shadow: 1px 1px 2px black;">Informe a data do inicio do nosso namoro^^
 
@@ -543,32 +575,3 @@ NAOOOO O MACHADO DE ASSIS DNV NÃO, SEMPRE ELE TERMINANDO OS VIDEOS OAKAAKAKAKAK
 
 <p style="color: white; font-family: Menlo, monospace; text-shadow: -1px -1px 0 black, 1px -1px 0 black,-1px  1px 0 black, 1px  1px 0 black, 4px 4px 4px black; font-size:1.3em; background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnnQfhLGq4zx8VxV4Y5uOyUjDEOJeB1gslU6IZ9sidKppn9FZ8OS6-YBo&s=10'); background-size:cover; padding: 10px;"> PRIMWIEA VEZ QUE EU FUI ATE SUA CASA KAKAKAKAKAKAKA primeira impressows minhas: roça pacas slc, me lembro que wu vi isso ai e falei pra vc tirar uma foto ai KAKAKKAKA acho que eu te acompanhei ate em casa esse dia, nao tenho certeza mas dai desc9bri onde era sua casa pra cagar na sua porya e vc nem ver h3h3h3h3, foi muito legal te acompanhar e eu sei que vc amou muito que eu te acompanhei tbm^^ slc dps que te conheci eu to me localizando melhor ate, na entrada do ensino medio nao sabia nem pegar onibus ainda KAKAKAKAAKAK mas era so ver o googpe maps e gg, agr eu sei ate que o 759 nao vai com sus cara pq vai pra paciencia KAKAKAAKAKAKAKA, ela anjo e leo (pizza)</p>
 
-
-<script>
-    // Código para o contador de tempo
-    const timeTogetherElement = document.getElementById('time-together');
-    const startDate = new Date('2024-07-02');
-
-    function updateTime() {
-        const now = new Date();
-        const difference = now - startDate;
-
-        if (difference < 0) {
-            timeTogetherElement.innerHTML = "Ainda não começamos!";
-            return;
-        }
-
-        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-        timeTogetherElement.innerHTML = `Estamos juntos há: ${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos`;
-    }
-
-    setInterval(updateTime, 1000);
-    updateTime();
-</script>
-
-</body>
-</html>
